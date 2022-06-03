@@ -1,0 +1,25 @@
+.header-wrapper{
+
+    justify-content: space-between;
+
+    .svg-wrapper{
+        display: flex!important;
+        align-items: center!important;
+        width: auto;
+        img{
+            vertical-align: middle;
+            align-content: space-between;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .svg-wrapper.basket{
+            justify-content: flex-end;
+    }
+
+    .divider {
+        width: 100%;
+    }
+    
+}
