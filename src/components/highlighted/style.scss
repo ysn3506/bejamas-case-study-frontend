@@ -1,0 +1,243 @@
+.highlighted-wrapper {
+    margin-top: 120px;
+
+    .header-wrapper {
+        margin-top: 58px !important;
+        margin-bottom: 27px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+
+        .svg-wrapper {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 35px;
+            padding: 0 !important;
+        }
+    }
+
+    .basket {
+
+        .add-to-cart {
+            width: 257px;
+            height: 47px;
+            border-radius: 0 !important;
+            background: #000000;
+        }
+    }
+
+    .highlighted-photo {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+       
+        position: relative;
+
+        img {
+            width: 100%;
+            height:48%;
+            margin: auto;
+
+        }
+        .photo-of-day{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:271.95px;
+            align-items: center;
+            height: 71px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            
+            color: #000000;
+        }
+    }
+
+    .mobile-add-to-cart{
+        display: none;
+    }
+
+    .details {
+        text-align: end;
+        margin-top:42px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: right;
+        color: #656565;
+        :first-child {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 24px;
+            text-align: right;
+            color: black;
+        }
+    }
+
+    .header-wrapper.highlighted-descriptions {
+        .basket {
+            .recommendation-wrapper {
+                margin-top:12px;
+                .also-buy {
+                    font-style: normal!important;
+                    font-weight: 700 !important;
+                    font-size: 22px!important;
+                    line-height: 24px!important;
+                    text-align: right;
+                    margin-bottom:27px;
+                }
+            .recommended-photos{
+                justify-content: flex-end;
+                :last-child{
+                    margin-right: 0;
+                }
+                :first-child{
+                    margin-left:unset;
+                }
+                }
+            }
+            .details{
+                :first-child{
+                    text-align: right;
+                }
+                text-align: right;
+            }
+
+        }
+
+        margin-top: 0!important;
+        padding-top: 1rem!important;
+
+        .highlighted-name {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 24px;
+            color: black;
+        }
+
+        .highlighted-category {
+            text-transform: capitalize;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 24px;
+            color: #656565;
+            margin-top: 9px;
+        }
+
+        .highlighted-description {
+            color: #656565;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 12px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:1600px) {
+    .highlighted-wrapper {
+        .header-wrapper{
+            margin-top: 38px !important;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .highlighted-wrapper {
+        margin-top: 50px;
+        .header-wrapper {
+            margin-top: 18px!important;
+            margin-bottom:21px!important;
+            // .svg-wrapper{
+            //     padding-right:0!important;
+            //     padding-left: 0 !important;
+            // }
+            .svg-wrapper.basket{
+                display: none!important;
+            }
+        }
+
+        .mobile-add-to-cart {
+            display:flex ;
+            margin-top: 30px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            button{
+                border-radius: 0;
+                width: 100%;
+                height: 61px;
+                max-width: 600px;
+                margin: auto;
+            }
+        }
+
+        .highlighted-photo{
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .photo-of-day{
+                width:227px;
+                height: 56.54px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 16px;
+            }
+        }
+
+        .highlighted-descriptions{
+            .column{
+                .highlighted-description{
+                    .highlighted-name{
+                        margin-bottom:45px;
+                    }
+                    .highlighted-category{
+                        display: none!important;
+                    }
+                }
+                .recommendation-wrapper{
+                    .also-buy{
+                        text-align: left!important;
+                    }
+                    .recommended-photos {
+                        justify-content: flex-start!important;
+                    
+                        :last-child {
+                            margin-right: unset;
+                        }
+                    
+                        :first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                    .details {
+                        :first-child {
+                            text-align: left!important;
+                        }
+                    
+                        text-align: left !important;
+                    }
+            }
+        }
+    }
+
+}

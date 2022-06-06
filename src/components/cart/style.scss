@@ -1,0 +1,98 @@
+.cart-dropdown {
+    position: absolute;
+    width: 480px;
+    height: auto;
+    min-height: 279px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    border: 4px solid #E4E4E4;
+    background-color: white;
+    top: 100px;
+    right: 0;
+    z-index: 50;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    // align-items: center;
+
+    .empty-message {
+        font-size: 18px;
+        margin: 25px;
+    }
+
+    .cart-items {
+        position: relative;
+        padding: 0;
+        min-height: 300px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+
+    }
+
+    .clear{
+        // position: absolute;
+        bottom: 0;
+        width:100%;
+        margin:10px auto auto auto;
+        height: 102px;
+        padding:27px;
+
+        .clear-button{
+            width:100%;
+            height: 55px;
+            border:2px solid black;
+            background-color: transparent;
+            color:black;
+            transition: color 200ms ease-in-out,background-color 200ms ease-in-out, transform 200ms ease-in-out;;
+            -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, transform 200ms ease-in-out;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.07em;
+        }
+
+        .clear-button:hover{
+            background-color: black;
+            color:white;
+            transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+            -webkit-transition: color 200ms ease-in-out,background-color 200ms ease-in-out;
+        }
+        .clear-button:active{
+            transform: scale(0.96);
+            transition: transform 200ms ease-in-out;
+            -webkit-transition:transform 200ms ease-in-out;
+           
+        }
+
+    }
+
+
+}
+
+.cart-dropdown.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:767px) {
+.cart-dropdown {
+    width:300px;
+    padding:15px;
+    top:50px;
+
+    .clear{
+        height: 120px;
+    }
+}
+    
+}

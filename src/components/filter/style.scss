@@ -1,0 +1,28 @@
+.filtering {
+    .filter-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom:43px;
+        color: #000000;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+
+        .category-options {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            width: fit-content;
+            /* identical to box height */
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            color: #1D1D1D;
+        }
+    }
+
+}

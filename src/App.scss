@@ -1,0 +1,41 @@
+.App,.header-main {
+  padding:40px 75px;
+
+  
+  h1,h2,h3,h4,p,span,div{
+     font-family: 'Archivo',sans-serif!important;
+  }
+
+}
+
+@media screen and (max-width:772px) {
+  .App,.header-main{
+    padding:40px 15px;
+  }
+  
+}
+@media screen and (min-width:993px) {
+  .App,.header-main {
+    padding: 40px 18px;
+  }
+
+}
+
+@media screen and (max-width:1208px){
+  .App,.header-main {
+    padding: 40px 18px;
+  }
+
+}
+@media screen and (min-width:1209px) {
+  .App ,.header-main{
+    padding: 40px 75px;
+  }
+
+}
+@media screen and (min-width:1600px) {
+  .App ,.header-main{
+    padding: 40px 12%;
+  }
+
+}

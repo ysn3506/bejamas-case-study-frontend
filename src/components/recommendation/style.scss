@@ -1,0 +1,20 @@
+.recommendation-wrapper {
+    text-align: right;
+
+    .recommended-photos {
+        display: flex;
+        justify-content: flex-end;
+
+        :last-child {
+            margin-right: 0 !important;
+        }
+
+        .recommended-photo {
+            width: 117px;
+            height: 147px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 10px;
+        }
+    }
+}

@@ -1,0 +1,233 @@
+
+.header-wrapper{
+    margin-right:0!important;
+    margin-left:0!important;
+    .svg-wrapper {
+            padding-right:0 !important;
+            padding-left:0 !important;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 33px;
+            color: #000000;
+    
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 33px;
+                color: #9B9B9B;
+            }
+        }
+    }
+
+    .svg-wrapper.basket.mobile {
+        display: none!important;
+    }
+}
+
+
+
+
+
+.exhibition-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 63px !important;
+    margin-right:0!important;
+    margin-left:0!important;
+    .filters{
+        padding-top:0!important;
+        min-width: 265px;
+        padding-right:0 !important;
+        padding-left:0 !important;
+    }
+
+    .slides {
+        justify-content: center;
+        padding: 0 !important;
+    display: flex!important;
+    flex-direction: column;
+    margin-bottom:130px;
+    }
+
+}
+
+@media screen and (max-width:1020px) {
+.header-wrapper {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    .svg-wrapper {
+        h2 {
+            font-size: 18px;
+            line-height: 20px;
+
+            span {
+            font-size: 18px;
+            line-height: 20px;
+            }
+        }
+    }
+
+    .svg-wrapper.basket.sort{
+        display: none!important;
+    }
+
+    .svg-wrapper.basket.sort.mobile{
+        display: flex!important;
+        img{
+            width:29.5px;
+            height: 29.5px;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 15%;
+            z-index: 100;
+            background: #000000;
+            opacity: 0.2;
+            display: none;
+        }
+
+        .overlay.active{
+            display: block;
+        }
+        .mobile-filter{
+            position: fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            padding:15px;
+            height: calc(100% - 92.5px) ;
+            z-index:50;
+            display: none;
+            background-color: white;
+            overflow-y: scroll;
+            border:2px solid #000000;;
+         
+            .mobile-filter-close{
+                // position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height: auto;
+                z-index:50;
+                display: flex;
+                justify-content: space-between;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 37px;
+                padding:0;
+                button{
+                    background-color: transparent;
+                    border:none;
+                }
+            }
+
+            .filter-button-group{
+                position: sticky;
+                bottom: 0;
+                padding: 15px 41px;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                z-index:60;
+                width: 100%;
+                border-top:4px solid #E4E4E4;
+
+                .clear-button {
+                    width: 177px;
+                    height: 55px;
+                    border: 2px solid black;
+                    background-color: transparent;
+                    color: black;
+                    transition: color 200ms ease-in-out, background-color 200ms ease-in-out, transform 200ms ease-in-out;
+                    ;
+                    -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, transform 200ms ease-in-out;
+                    cursor: pointer;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 23px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: 0.07em;
+                    margin:auto 10px;
+                }
+                
+                .clear-button:hover {
+                    background-color: black;
+                    color: white;
+                    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+                    -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+                }
+                
+                .clear-button:active {
+                    transform: scale(0.96);
+                    transition: transform 200ms ease-in-out;
+                    -webkit-transition: transform 200ms ease-in-out;
+                
+                }
+
+                .clear-button.reverse{
+                        background-color: black;
+                        color:white;
+                }
+
+                .clear-button.reverse:hover {
+                    background-color: white;
+                    color: white;
+                    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+                    -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+                }
+                
+                .clear-button.reverse:active {
+                    transform: scale(0.96);
+                    transition: transform 200ms ease-in-out;
+                    -webkit-transition: transform 200ms ease-in-out;
+                
+                }
+               
+            }
+        }
+
+        .mobile-filter.active{
+            display: block;
+        }
+    }
+}
+
+.exhibition-wrapper{
+    margin-top: 30px;
+        display: flex;
+        justify-content: center!important;
+    .filters{
+        display: none!important;
+        
+    }
+    .slides{
+        width:100vw!important;
+    }
+}
+
+    
+}
+
+
+@media screen and (min-width:993px) {
+    .exhibition-wrapper {
+      
+    
+        .filters {
+            min-width:245px;
+    
+        }
+    }
+}
+
+
+
+
